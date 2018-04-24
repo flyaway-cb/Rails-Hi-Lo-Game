@@ -1,4 +1,4 @@
-class MainController 
+class MainController < ApplicationController
 
   def answers
     if params[:number].to_i.even?
@@ -6,7 +6,7 @@ class MainController
     else
       @result_string = "Odd"
     end
-    #render "answers.html.erb"
+    render "answers.html.erb"
   end
 
 end
